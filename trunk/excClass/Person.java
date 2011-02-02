@@ -1,33 +1,35 @@
-public class Person {
-	String name ;
-	int age ;
+class Person{
+ String name ;
+ int age ;
 
-	public String getName(){
-		return name ;
-	}
-	public int getAge(){
-		return age ;
-	}
+ void setName(String tmp){
+  name = tmp ;
+ }
 
-	public void setName(String name){
-		this.name = name ;
-	}
-	public void setAge(int age)
-	{
-		this.age = age ;
-	}
+ void setAge(int tmp){
+  age = tmp ;
+ }
+ 
+ void print(){
+  System.out.println("Name : " + name);
+  System.out.println("Umur : " + age);
+  System.out.println("---------------------------\n");
 
-	public static void main(String[]args){
-		Person fanani = new Person();
-		fanani.setName("Fanani M. Ihsan");
-		fanani.setAge(21);
-		System.out.println("Name : " + fanani.getName());
-		System.out.println("Age  : " + fanani.getAge() + "\n");
+ }
+ 
+  
+ public static void main(String[]args){
+	// object fanani
+ 	Person fanani = new Person();
+	fanani.setName("Fanani Mafatikul Ihsan");	
+	fanani.setAge(21);
+	fanani.print();
 
-		Person adi = new Person();
-                adi.setName("Adi Sulistiono");
-                adi.setAge(18);
-                System.out.println("Name : " + adi.getName());
-                System.out.println("Age  : " + adi.getAge() + "\n");
-	}
+	// object adi
+	Person adi = new Person();
+        adi.setName("Adi Sulitiono");
+        adi.setAge(17);
+        adi.print();
+ }
+
 }
